@@ -69,8 +69,8 @@ Performed data mining, feature engineering, and classification on large datasets
 ---
 
 ## 📫 Connect With Me
-- 🔗 GitHub: [https://github.com/YOUR_USERNAME](https://github.com/wasiq0)  
-- 💼 LinkedIn: [https://linkedin.com/in/YOUR_PROFILE](https://www.linkedin.com/in/wasiqbakhsh/)  
+- 🔗 GitHub: [https://github.com/wasiq0](https://github.com/wasiq0)  
+- 💼 LinkedIn: [https://linkedin.com/in/wasiqbakhsh/](https://www.linkedin.com/in/wasiqbakhsh/)  
 - 📧 Email: wasiqab0@gmail.com
 
 ---
