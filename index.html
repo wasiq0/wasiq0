@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wasiq Nabi Bakhsh - Data Scientist & ML Engineer</title>
+    <meta name="description" content="Portfolio of Wasiq Nabi Bakhsh - Data Scientist and ML Engineer specializing in machine learning, NLP, and MLOps">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Spectral:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0e17;
+            --bg-secondary: #121825;
+            --bg-card: #1a2332;
+            --accent-primary: #00d9ff;
+            --accent-secondary: #7c3aed;
+            --text-primary: #e8edf5;
+            --text-secondary: #8b95a8;
+            --text-muted: #5a6679;
+            --border: rgba(0, 217, 255, 0.1);
+            --glow: rgba(0, 217, 255, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Spectral', serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Animated background grid */
+        .bg-grid {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(var(--border) 1px, transparent 1px),
+                linear-gradient(90deg, var(--border) 1px, transparent 1px);
+            background-size: 50px 50px;
+            opacity: 0.3;
+            z-index: -1;
+            animation: gridMove 20s linear infinite;
+        }
+
+        @keyframes gridMove {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        /* Gradient orbs */
+        .orb {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(100px);
+            opacity: 0.2;
+            z-index: -1;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        .orb-1 {
+            width: 500px;
+            height: 500px;
+            background: var(--accent-primary);
+            top: -200px;
+            right: -200px;
+            animation-delay: 0s;
+        }
+
+        .orb-2 {
+            width: 400px;
+            height: 400px;
+            background: var(--accent-secondary);
+            bottom: -100px;
+            left: -100px;
+            animation-delay: 5s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, -30px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Header/Hero */
+        header {
+            padding: 6rem 0 4rem;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header-content {
+            position: relative;
+        }
+
+        .label {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--accent-primary);
+            margin-bottom: 1rem;
+            display: inline-block;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: 600;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-primary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin-bottom: 2rem;
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.9rem;
+            animation: fadeInUp 1s ease-out 0.5s both;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--accent-primary);
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-primary);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Section headers */
+        .section {
+            margin-bottom: 6rem;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        .section:nth-child(2) { animation-delay: 0.6s; }
+        .section:nth-child(3) { animation-delay: 0.7s; }
+        .section:nth-child(4) { animation-delay: 0.8s; }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .section-number {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 1rem;
+            color: var(--accent-primary);
+            font-weight: 600;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+
+        .section-line {
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, var(--border) 0%, transparent 100%);
+        }
+
+        /* Projects grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+            transform: translateX(-100%);
+            transition: transform 0.4s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--accent-primary);
+            box-shadow: 0 20px 60px var(--glow);
+        }
+
+        .project-card:hover::before {
+            transform: translateX(0);
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 1rem;
+        }
+
+        .project-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.7rem;
+            padding: 0.25rem 0.75rem;
+            background: rgba(0, 217, 255, 0.1);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            color: var(--accent-primary);
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
+        }
+
+        .project-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .project-meta {
+            display: flex;
+            gap: 1.5rem;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-primary);
+            text-decoration: none;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.85rem;
+            margin-top: 1rem;
+            transition: gap 0.3s;
+        }
+
+        .project-link:hover {
+            gap: 0.75rem;
+        }
+
+        /* Skills section */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-category {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s;
+        }
+
+        .skill-category:hover {
+            border-color: var(--accent-primary);
+            box-shadow: 0 10px 30px var(--glow);
+        }
+
+        .skill-category h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent-primary);
+        }
+
+        .skill-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .skill-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.9rem;
+        }
+
+        .skill-name {
+            color: var(--text-secondary);
+        }
+
+        .skill-bar {
+            width: 100px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .skill-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+            border-radius: 2px;
+            transition: width 1s ease-out;
+        }
+
+        /* About section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .stat-card:hover {
+            border-color: var(--accent-primary);
+            transform: scale(1.05);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 600;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        /* Contact section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .contact-info {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 3rem;
+        }
+
+        .contact-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info p {
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: rgba(0, 217, 255, 0.05);
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        .contact-method:hover {
+            background: rgba(0, 217, 255, 0.1);
+            transform: translateX(8px);
+        }
+
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .contact-details {
+            flex: 1;
+        }
+
+        .contact-label {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .contact-value {
+            color: var(--text-primary);
+            font-size: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 3rem 0;
+            margin-top: 6rem;
+            text-align: center;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            h1 {
+                font-size: 3rem;
+            }
+
+            .about-content,
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            header {
+                padding: 3rem 0 2rem;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+
+        /* Scroll reveal animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="label">Data Scientist & ML Engineer</div>
+                <h1>Wasiq Nabi Bakhsh</h1>
+                <p class="subtitle">MS in Engineering Data Science @ University at Buffalo | Specializing in machine learning, NLP, and MLOps to build data-driven solutions that drive impact.</p>
+                <div class="nav-links">
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </header>
+
+        <section id="projects" class="section">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-icon">🚀</div>
+                    <div class="project-tags">
+                        <span class="tag">MLOps</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">FastAPI</span>
+                    </div>
+                    <h3 class="project-title">End-to-End ML Deployment Pipeline</h3>
+                    <p class="project-description">
+                        Built a complete ML pipeline from data ingestion to cloud deployment. Trained 16 classification experiments tracked with MLflow/DagsHub, selected best model by F1-score, and served via FastAPI with Streamlit frontend. Fully Dockerized and deployed on Render.
+                    </p>
+                    <div class="project-meta">
+                        <span>📊 MLflow + DagsHub</span>
+                        <span>☁️ Cloud Deployed</span>
+                    </div>
+                    <a href="https://github.com/wasiq0" class="project-link">View Project →</a>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-icon">📈</div>
+                    <div class="project-tags">
+                        <span class="tag">NLP</span>
+                        <span class="tag">FinBERT</span>
+                        <span class="tag">LSTM</span>
+                    </div>
+                    <h3 class="project-title">Financial Sentiment Analysis</h3>
+                    <p class="project-description">
+                        Built a scalable pipeline aligning 600K+ financial news headlines with 7,000+ U.S. stocks. Extracted sentiment using TextBlob and FinBERT, engineered temporal features, and implemented multiple models (LR, RF, XGBoost, LSTM) with SHAP explainability.
+                    </p>
+                    <div class="project-meta">
+                        <span>📰 600K+ Headlines</span>
+                        <span>🔍 SHAP Insights</span>
+                    </div>
+                    <a href="https://github.com/wasiq0" class="project-link">View Project →</a>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-icon">💬</div>
+                    <div class="project-tags">
+                        <span class="tag">AI</span>
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">OpenAI</span>
+                    </div>
+                    <h3 class="project-title">Multilingual AI Conversational Agent</h3>
+                    <p class="project-description">
+                        Led a 4-member team to design a bilingual AI chatbot for e-learning. Integrated OpenAI Whisper STT, Meta AI NLP models for dialogue, and ElevenLabs TTS with real-time low-latency processing. Revolutionizing multilingual education accessibility.
+                    </p>
+                    <div class="project-meta">
+                        <span>🌐 Real-time STT/TTS</span>
+                        <span>🎓 E-learning Focus</span>
+                    </div>
+                    <a href="https://github.com/wasiq0" class="project-link">View Project →</a>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-icon">💳</div>
+                    <div class="project-tags">
+                        <span class="tag">Classification</span>
+                        <span class="tag">AWS</span>
+                    </div>
+                    <h3 class="project-title">Bank Fraud Detection System</h3>
+                    <p class="project-description">
+                        Developed fraud detection models improving accuracy by 30%. Engineered features from 1M+ transactions, built ETL pipelines across SQL and AWS S3, and reduced false positives by 20% through threshold tuning. Automated monitoring dashboards cut response time by 15%.
+                    </p>
+                    <div class="project-meta">
+                        <span>🏦 1M+ Transactions</span>
+                        <span>🎯 30% Accuracy Boost</span>
+                    </div>
+                    <a href="https://github.com/wasiq0" class="project-link">View Project →</a>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-icon">📊</div>
+                    <div class="project-tags">
+                        <span class="tag">Tableau</span>
+                        <span class="tag">Python</span>
+                    </div>
+                    <h3 class="project-title">Pakistan 2024 Elections Dashboard</h3>
+                    <p class="project-description">
+                        Created comprehensive Tableau dashboard analyzing the 2024 Pakistan elections. Extracted data from Dawn API, visualized voter turnout dynamics, candidate performance, regional trends, and demographic insights across districts.
+                    </p>
+                    <div class="project-meta">
+                        <span>🗳️ Dawn API</span>
+                        <span>📊 Interactive Viz</span>
+                    </div>
+                    <a href="https://public.tableau.com/views/PakistanElectionsTrends2024/Dashboard1" class="project-link">View Dashboard →</a>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-icon">💬</div>
+                    <div class="project-tags">
+                        <span class="tag">NLP</span>
+                        <span class="tag">Sentiment Analysis</span>
+                    </div>
+                    <h3 class="project-title">YouTube Comment Analysis Pipeline</h3>
+                    <p class="project-description">
+                        Developed end-to-end NLP pipeline analyzing YouTube comments for sentiment and emotion. Used YouTube Data API for scraping, applied VADER and NRC Emotion Lexicon, and visualized insights with Matplotlib and Seaborn.
+                    </p>
+                    <div class="project-meta">
+                        <span>🎥 YouTube API</span>
+                        <span>😊 Emotion Detection</span>
+                    </div>
+                    <a href="https://www.kaggle.com/wasiqbakhsh" class="project-link">View on Kaggle →</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="skills-container">
+                <div class="skill-category reveal">
+                    <h3>Programming & Data</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">R</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Pandas & NumPy</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <h3>Machine Learning</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Scikit-learn</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">TensorFlow</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PyTorch</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">XGBoost</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <h3>NLP & AI</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">NLTK</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">FinBERT</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">OpenAI Whisper</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SHAP</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <h3>MLOps & Cloud</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MLflow & DagsHub</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">FastAPI</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">AWS & GCP</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <h3>Visualization</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Tableau</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Power BI</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Matplotlib</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Seaborn</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <h3>Big Data & Databases</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Spark & Hadoop</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PostgreSQL</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL Server</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text reveal">
+                    <p>
+                        I'm a data scientist and ML engineer currently pursuing my MS in Engineering Data Science at the University at Buffalo. With a strong foundation in machine learning, NLP, and MLOps, I transform complex data challenges into scalable, production-ready solutions.
+                    </p>
+                    <p>
+                        My experience spans multiple domains—from building fraud detection systems at The Bank of Khyber that improved accuracy by 30%, to developing marketing analytics at House of Brands Media that drove 25% lead generation growth. I specialize in end-to-end ML pipelines, from data preprocessing and feature engineering to model deployment and monitoring in cloud environments.
+                    </p>
+                    <p>
+                        I'm passionate about making AI accessible and impactful. Whether it's analyzing 600K+ financial headlines for sentiment-driven stock predictions or building multilingual conversational agents for e-learning, I believe in the power of data and AI to solve real-world problems. When I'm not building models or creating dashboards, you'll find me exploring the latest in LLMs, contributing to open-source projects, and sharing insights on LinkedIn.
+                    </p>
+                </div>
+
+                <div class="stats-grid reveal">
+                    <div class="stat-card">
+                        <div class="stat-number">20+</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Years Exp</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">1M+</div>
+                        <div class="stat-label">Transactions Analyzed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">30%</div>
+                        <div class="stat-label">Avg Improvement</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h3>Let's Connect</h3>
+                    <p>I'm actively seeking opportunities in data science, machine learning engineering, and AI. Feel free to reach out!</p>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <div class="contact-label">Email</div>
+                            <div class="contact-value">Wasiqcyber@gmail.com</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">💼</div>
+                        <div class="contact-details">
+                            <div class="contact-label">LinkedIn</div>
+                            <div class="contact-value">linkedin.com/in/wasiqbakhsh</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">💻</div>
+                        <div class="contact-details">
+                            <div class="contact-label">GitHub</div>
+                            <div class="contact-value">github.com/wasiq0</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">🌐</div>
+                        <div class="contact-details">
+                            <div class="contact-label">Location</div>
+                            <div class="contact-value">Buffalo, NY, USA</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <div class="contact-label">Phone</div>
+                            <div class="contact-value">+1 716-256-5828</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-info reveal">
+                    <h3>What I'm Looking For</h3>
+                    <p style="margin-bottom: 1.5rem;">I'm particularly interested in opportunities involving:</p>
+                    
+                    <div class="skill-list" style="gap: 1rem;">
+                        <div style="padding: 1rem; background: rgba(0, 217, 255, 0.05); border-radius: 8px; border-left: 3px solid var(--accent-primary);">
+                            <strong style="color: var(--accent-primary);">MLOps & Production ML</strong><br>
+                            <span style="color: var(--text-secondary); font-size: 0.9rem;">Deploying and monitoring ML systems at scale</span>
+                        </div>
+                        <div style="padding: 1rem; background: rgba(124, 58, 237, 0.05); border-radius: 8px; border-left: 3px solid var(--accent-secondary);">
+                            <strong style="color: var(--accent-secondary);">NLP & Generative AI</strong><br>
+                            <span style="color: var(--text-secondary); font-size: 0.9rem;">Building intelligent language systems and LLM applications</span>
+                        </div>
+                        <div style="padding: 1rem; background: rgba(0, 217, 255, 0.05); border-radius: 8px; border-left: 3px solid var(--accent-primary);">
+                            <strong style="color: var(--accent-primary);">Data Science & Analytics</strong><br>
+                            <span style="color: var(--text-secondary); font-size: 0.9rem;">Turning data into actionable business insights</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2025 Wasiq Nabi Bakhsh. Built with passion for data and design.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Scroll reveal animation
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        const revealOnScroll = () => {
+            const windowHeight = window.innerHeight;
+            revealElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                if (elementTop < windowHeight - 100) {
+                    element.classList.add('active');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll(); // Initial check
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Parallax effect for orbs
+        document.addEventListener('mousemove', (e) => {
+            const orbs = document.querySelectorAll('.orb');
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+            
+            orbs.forEach((orb, index) => {
+                const speed = (index + 1) * 20;
+                orb.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+            });
+        });
+    </script>
+</body>
+</html>
