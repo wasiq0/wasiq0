@@ -1,76 +1,51 @@
-# 👋 Hi, I'm Wasiq Nabi Bakhsh
+# 👋 Hey, I'm Wasiq Nabi Bakhsh
 
-I'm a Data Scientist & Machine Learning Engineer with a passion for turning data into intelligent, scalable, and meaningful products. I specialize in building **end‑to‑end machine learning systems**, from data acquisition and feature engineering to model development, deployment, and monitoring.
+I'm a **Data Scientist & Machine Learning Engineer** passionate about building intelligent systems that solve real problems. I love working across the full ML lifecycle — from data engineering and model development to deployment, automation, and monitoring.
 
-Currently pursuing my **MS in Engineering Data Science at the University at Buffalo**, I focus on solving real-world problems using ML, NLP, and MLOps — with an emphasis on production-quality solutions that deliver measurable impact.
-
----
-
-## 🔥 What I Do
-
-### 🧠 Machine Learning & AI  
-I build models that solve classification, prediction, and NLP challenges at scale.  
-I enjoy experimenting with architectures, optimizing pipelines, and explaining model behavior using tools like SHAP.
-
-### 💬 Natural Language Processing  
-From sentiment analysis on hundreds of thousands of financial headlines to multilingual conversational agents, I love working with text, language models, and AI-powered automation.
-
-### ⚙️ MLOps & Deployment  
-I have hands-on experience deploying ML systems using **Docker, FastAPI, MLflow, Streamlit, and cloud platforms**.  
-My focus is always: *model reliability, reproducibility, and seamless deployment*.
-
-### 📊 Data Engineering & Analytics  
-Whether it’s analyzing **1M+ bank transactions** or extracting insights with Python, SQL, and Tableau, I’m driven by data’s ability to guide decisions and create value.
+Currently pursuing my **MS in Engineering Data Science at the University at Buffalo**, I focus on creating scalable end‑to‑end solutions in ML, NLP, and MLOps.
 
 ---
 
-## 🛠️ Technical Skills
+## 🚀 What I Do
+
+- **Machine Learning Engineering** – building predictive models & optimizing pipelines  
+- **NLP & AI** – sentiment analysis, LLM applications, multilingual agents  
+- **MLOps** – MLflow, Docker, FastAPI, CI/CD, experiment tracking  
+- **Cloud & Deployment** – AWS, GCP, Render, containerized apps  
+- **Data Analytics & Engineering** – SQL, Python, dashboards, large datasets  
+
+---
+
+## 🛠️ Tech Stack I Work With
 
 **Languages:** Python, SQL, R  
-**ML Frameworks:** scikit-learn, TensorFlow, PyTorch, XGBoost  
-**NLP:** NLTK, FinBERT, OpenAI Whisper, SHAP  
-**MLOps & Backend:** Docker, MLflow, DagsHub, FastAPI, Streamlit  
+**ML:** scikit‑learn, TensorFlow, PyTorch, XGBoost  
+**NLP:** NLTK, FinBERT, Whisper, SHAP  
+**MLOps:** Docker, MLflow, DagsHub, FastAPI  
 **Cloud:** AWS, GCP  
-**Visualization:** Tableau, Power BI, Matplotlib, Seaborn  
+**Data:** Pandas, NumPy, Spark, Hadoop  
+**Viz:** Tableau, Power BI, Seaborn, Matplotlib  
 **Databases:** PostgreSQL, MySQL, SQL Server  
-**Big Data:** Spark, Hadoop  
 
 ---
 
-## 🚀 What I'm Working On
+## 📌 A Bit About Me
 
-- Production-ready ML pipelines  
-- NLP applications and conversational AI  
-- Cloud-native ML systems  
-- Large-scale sentiment and behavioral modeling  
-- Data engineering and analytics dashboards  
+I enjoy taking complex data problems and turning them into automated, production‑ready solutions.  
+I’m driven by impact — whether it’s improving fraud detection, analyzing 600K+ financial headlines, or building AI assistants.
 
----
-
-## 🎯 Career Interests
-
-I’m actively looking for opportunities in:
-
-- **Machine Learning Engineering**  
-- **Data Science**  
-- **AI / NLP Engineering**  
-- **MLOps & ML Infrastructure**  
-
-I love roles where I can build, deploy, and optimize real AI systems that create business impact.
+I love learning new tools, exploring emerging AI technologies, and building practical systems that help people and businesses.
 
 ---
 
-## 📬 Let’s Connect
+## 📫 Connect With Me
 
-- **LinkedIn:** https://linkedin.com/in/wasiqbakhsh  
-- **GitHub:** https://github.com/wasiq0  
-- **Email:** Wasiqcyber@gmail.com  
-- **Location:** Buffalo, NY  
+📍 Buffalo, NY  
+📧 **Wasiqcyber@gmail.com**  
+🔗 **LinkedIn:** https://linkedin.com/in/wasiqbakhsh  
+💻 **GitHub:** https://github.com/wasiq0  
 
 ---
 
-### ✨ About Me
-
-I enjoy solving difficult problems, learning emerging AI tools, and pushing myself to build smarter, faster, and cleaner systems. Outside of tech, I stay curious — following AI advancements, exploring new tools, and contributing to open-source ideas.
-
-Thanks for stopping by!  
+Thanks for stopping by! 🚀
+``
