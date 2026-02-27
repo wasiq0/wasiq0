@@ -142,7 +142,6 @@ My experience spans:
 - **LinkedIn:** https://linkedin.com/in/wasiqbakhsh  
 - **GitHub:** https://github.com/wasiq0  
 - **Location:** Buffalo, NY  
-- **Phone:** +1 716‑256‑5828  
 
 ---
 
