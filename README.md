@@ -1,153 +1,170 @@
-# Wasiq Nabi Bakhsh - Data Science Portfolio
+# 🚀 Wasiq Nabi Bakhsh – Data Science & ML Engineering Portfolio
 
-A modern, responsive portfolio website showcasing data science and machine learning projects.
-
-## 🚀 Features
-
-- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
-- **Modern UI**: Dark theme with animated backgrounds and smooth transitions
-- **Interactive Elements**: Hover effects, scroll animations, and parallax effects
-- **Project Showcase**: Highlighting key ML, NLP, and data science projects
-- **Technical Skills**: Visual representation of technical competencies
-- **Contact Section**: Multiple ways to get in touch
-
-## 📋 Sections
-
-1. **Hero** - Introduction with name, title, and navigation
-2. **Projects** - Featured data science and ML projects
-3. **Skills** - Technical skills organized by category
-4. **About** - Background, experience, and statistics
-5. **Contact** - Contact information and career interests
-
-## 🛠️ Technologies Used
-
-- HTML5
-- CSS3 (with CSS Grid and Flexbox)
-- Vanilla JavaScript
-- Google Fonts (IBM Plex Mono, Spectral)
-
-## 📦 Deployment to GitHub Pages
-
-Follow these steps to deploy your portfolio to GitHub Pages:
-
-### Step 1: Create a GitHub Repository
-
-1. Go to [GitHub](https://github.com) and sign in
-2. Click the "+" icon in the top right and select "New repository"
-3. Name your repository: `your-username.github.io` (replace `your-username` with your GitHub username)
-   - Example: `wasiq0.github.io`
-4. Set it to **Public**
-5. Click "Create repository"
-
-### Step 2: Upload Your Files
-
-**Option A: Using GitHub Web Interface**
-
-1. In your new repository, click "uploading an existing file"
-2. Drag and drop the `index.html` file
-3. Scroll down and click "Commit changes"
-
-**Option B: Using Git Command Line**
-
-```bash
-# Navigate to where you downloaded the portfolio file
-cd /path/to/your/portfolio
-
-# Initialize git repository
-git init
-
-# Add the file
-git add index.html
-
-# Commit the file
-git commit -m "Initial commit: Add portfolio website"
-
-# Add your GitHub repository as remote
-git remote add origin https://github.com/your-username/your-username.github.io.git
-
-# Push to GitHub
-git branch -M main
-git push -u origin main
-```
-
-### Step 3: Enable GitHub Pages
-
-1. Go to your repository on GitHub
-2. Click on "Settings" (in the repository menu)
-3. Scroll down to "Pages" section in the left sidebar
-4. Under "Source", select "main" branch
-5. Click "Save"
-
-### Step 4: Access Your Website
-
-Your portfolio will be live at: `https://your-username.github.io`
-
-It may take a few minutes for GitHub Pages to build and deploy your site.
-
-## 🎨 Customization
-
-### Updating Project Links
-
-In the `index.html` file, update the project links from the placeholder `https://github.com/wasiq0` to your actual project repository URLs:
-
-```html
-<a href="https://github.com/your-username/your-project-repo" class="project-link">View Project →</a>
-```
-
-### Changing Colors
-
-The color scheme is defined in CSS variables at the top of the file:
-
-```css
-:root {
-    --bg-primary: #0a0e17;
-    --accent-primary: #00d9ff;
-    --accent-secondary: #7c3aed;
-    /* etc. */
-}
-```
-
-### Adding More Projects
-
-Copy a project card `<div class="project-card reveal">...</div>` and modify the content:
-
-```html
-<div class="project-card reveal">
-    <div class="project-icon">🎯</div>
-    <div class="project-tags">
-        <span class="tag">Your Tag</span>
-    </div>
-    <h3 class="project-title">Your Project Title</h3>
-    <p class="project-description">Your project description</p>
-    <div class="project-meta">
-        <span>📊 Metric 1</span>
-        <span>🎯 Metric 2</span>
-    </div>
-    <a href="your-link" class="project-link">View Project →</a>
-</div>
-```
-
-## 📱 Mobile Responsive
-
-The portfolio is fully responsive with breakpoints at:
-- Desktop: 1200px+
-- Tablet: 968px - 1199px
-- Mobile: < 968px
-
-## 🔗 Links
-
-- **GitHub**: [github.com/wasiq0](https://github.com/wasiq0)
-- **LinkedIn**: [linkedin.com/in/wasiqbakhsh](https://linkedin.com/in/wasiqbakhsh)
-- **Email**: Wasiqcyber@gmail.com
-
-## 📄 License
-
-This portfolio template is free to use and modify for personal use.
-
-## 🤝 Contributing
-
-Feel free to fork this repository and customize it for your own portfolio!
+A modern, responsive, and recruiter‑optimized portfolio showcasing my work in **Machine Learning, NLP, MLOps, Cloud Deployment, Data Engineering, and Analytics**.  
+Designed with a clean dark theme, smooth animations, and a focus on real impact through data and AI.
 
 ---
 
-Built with ❤️ by Wasiq Nabi Bakhsh
+## ⭐ Features
+
+- **Responsive Design** – Works on desktop, tablet, and mobile  
+- **Modern UI** – Dark theme, smooth transitions, interactive elements  
+- **Project Showcases** – Clear metrics, tech stack, and links  
+- **Technical Skills Overview** – Categorized skill chips  
+- **About + Stats Section** – Experience, achievements, and expertise  
+- **Contact Section** – Multi‑channel communication options  
+
+---
+
+## 🧩 Sections
+
+1. **Hero** – Introduction, role, CTAs  
+2. **Projects** – End‑to‑end ML/NLP/Data projects  
+3. **Skills** – Full categorized skill set  
+4. **About** – Background + career focus  
+5. **Contact** – Email, LinkedIn, GitHub, location, phone  
+
+---
+
+# 🧠 Featured Projects
+
+### **1. End‑to‑End ML Deployment Pipeline**
+- Built complete ML pipeline: ingestion → training → tracking → deployment  
+- Ran **16 classification experiments** using MLflow + DagsHub  
+- Served best model with **FastAPI + Streamlit**  
+- Fully **Dockerized** and deployed on **Render**  
+**Tech:** Python, scikit‑learn, MLflow, Docker, FastAPI, Streamlit, Render  
+🔗 *Link in portfolio*
+
+---
+
+### **2. Financial Sentiment Analysis (600K+ Headlines)**
+- Processed **600K+ financial news headlines**  
+- Mapped to **7,000+ U.S. stocks** over multiple years  
+- Sentiment extraction via **FinBERT + TextBlob**  
+- ML models: LR, RF, XGBoost, LSTM  
+- Added **SHAP explainability** for transparency  
+**Tech:** pandas, FinBERT, SHAP, XGBoost, LSTM  
+🔗 *Link in portfolio*
+
+---
+
+### **3. Multilingual AI Conversational Agent**
+- Built a **real‑time bilingual chatbot** for e‑learning  
+- Powered by:
+  - **OpenAI Whisper** (speech‑to‑text)  
+  - **Meta / LLM models** for dialogue  
+  - **ElevenLabs** for voice output  
+- Achieved low‑latency conversational flow  
+**Tech:** Whisper, LLM APIs, Python, FastAPI, ElevenLabs  
+🔗 *Link in portfolio*
+
+---
+
+### **4. Bank Fraud Detection System (1M+ Transactions)**
+- Analyzed **1M+ bank transactions**  
+- Improved fraud detection accuracy by **30%**  
+- Reduced false positives by **20%**  
+- Cut investigation response time by **15%** via monitoring dashboards  
+**Tech:** Python, scikit‑learn, SQL, AWS S3  
+🔗 *Link in portfolio*
+
+---
+
+### **5. Pakistan 2024 Elections Dashboard**
+- Extracted real‑time election data from **Dawn API**  
+- Built interactive dashboard showing:
+  - Turnout patterns  
+  - Candidate performance  
+  - Regional voting behavior  
+**Tech:** Tableau, Python  
+🔗 *View Dashboard in portfolio*
+
+---
+
+### **6. YouTube Comment Sentiment Pipeline**
+- Built NLP pipeline for extracting sentiment & emotion from YouTube comments  
+- Used **YouTube Data API**, **VADER**, and **NRC Emotion Lexicon**  
+- Visualized insights with **Matplotlib + Seaborn**  
+**Tech:** Python, VADER, NRC, YouTube API  
+🔗 *View on Kaggle*
+
+---
+
+# 🧰 Technical Skills
+
+### **Programming & Data**
+Python • SQL • R • Pandas • NumPy  
+
+### **Machine Learning**
+scikit‑learn • TensorFlow • PyTorch • XGBoost  
+
+### **NLP & AI**
+NLTK • FinBERT • OpenAI Whisper • SHAP  
+
+### **MLOps & Cloud**
+Docker • MLflow • DagsHub • FastAPI • AWS • GCP  
+
+### **Visualization**
+Tableau • Power BI • Matplotlib • Seaborn  
+
+### **Big Data & Databases**
+Spark • Hadoop • PostgreSQL • MySQL • SQL Server  
+
+---
+
+# 👤 About Me
+
+I’m a Data Scientist & ML Engineer and an **MS Engineering Data Science** student at the **University at Buffalo**.  
+I design and deploy **production‑ready machine learning systems** with measurable business impact.
+
+My experience spans:
+- Fraud analytics  
+- NLP & AI agents  
+- Financial modeling  
+- MLOps & deployment pipelines  
+- Large‑scale data processing  
+
+---
+
+# 📊 Stats
+
+- **20+** completed projects  
+- **3+ years** of hands‑on experience  
+- **1M+** transactions processed  
+- **30%+** average model improvement  
+
+---
+
+# 📬 Contact
+
+- **Email:** Wasiqcyber@gmail.com  
+- **LinkedIn:** https://linkedin.com/in/wasiqbakhsh  
+- **GitHub:** https://github.com/wasiq0  
+- **Location:** Buffalo, NY  
+- **Phone:** +1 716‑256‑5828  
+
+---
+
+# 📦 Deployment (GitHub Pages)
+
+1. Create a repo named `your-username.github.io`  
+2. Upload `index.html` (and assets)  
+3. Enable Pages → Source: **main branch**  
+4. Your site appears at:  
+   `https://your-username.github.io`
+
+---
+
+# 🎨 Customization
+
+### Updating Project Links
+Edit the `<a href="...">` in each project card.
+
+### Changing Theme Colors
+```css
+:root {
+  --bg-primary: #0a0e17;
+  --accent-primary: #00d9ff;
+  --accent-secondary: #7c3aed;
+}
