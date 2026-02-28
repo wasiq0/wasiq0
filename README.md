@@ -26,8 +26,8 @@
 wasiq = {
     "name"       : "Wasiq Bakhsh",
     "education"  : "MS Engineering Data Science @ University at Buffalo (2027)",
-    "background" : "BS Data Science @ IMSciences, Pakistan (GPA: 3.2)",
-    "currently"  : "Data Graduate Assistant @ UB International Student Services",
+    "background" : "BS Data Science @ IMSciences, Pakistan",
+    "currently"  : "Data Graduate Assistant",
     "looking_for": "Data Science / ML / BI Internships",
     "location"   : "Buffalo, NY (open to relocate)",
     "languages"  : ["Python", "SQL", "R"],
