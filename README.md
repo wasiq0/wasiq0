@@ -172,7 +172,7 @@ If you have an opportunity or just want to talk data — let's connect!
 <br/>
 
 [![LinkedIn](https://img.shields.io/badge/Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/wasiqbakhsh)
-[![Portfolio](https://img.shields.io/badge/Visit_My_Portfolio-E6A817?style=for-the-badge&logo=github&logoColor=white)](https://wasiq0.github.io)
+[![Portfolio](https://img.shields.io/badge/Visit_My_Portfolio-E6A817?style=for-the-badge&logo=github&logoColor=white)](https://wasiqvoid.github.io/wasiqvoid/)
 [![Email](https://img.shields.io/badge/Send_an_Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:Wasiqcyber@gmail.com)
 
 <br/>
