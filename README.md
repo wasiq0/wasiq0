@@ -56,7 +56,7 @@ Full pipeline from data ingestion → **16 classification experiments** tracked 
 <td width="50%">
 
 ### 📈 Financial Sentiment & Stock Prediction
-[![Repo](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github)](https://github.com/wasiq0)
+[![Repo](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github)](https://github.com/wasiqvoid)
 ![PyTorch](https://img.shields.io/badge/-PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
 ![XGBoost](https://img.shields.io/badge/-XGBoost-FF6600?style=flat-square&logo=xgboost&logoColor=white)
 
@@ -68,7 +68,7 @@ Aligned **600K+ financial news headlines** with 7,000+ U.S. stocks. Extracted se
 <td width="50%">
 
 ### 🤖 Multilingual Real-Time AI Chatbot
-[![Repo](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github)](https://github.com/wasiq0)
+[![Repo](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github)](https://github.com/wasiqvoid)
 ![TensorFlow](https://img.shields.io/badge/-TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
 ![OpenAI](https://img.shields.io/badge/-Whisper-412991?style=flat-square&logo=openai&logoColor=white)
 
@@ -78,7 +78,7 @@ Led a 4-member team building a **bilingual AI e-learning agent** — OpenAI Whis
 <td width="50%">
 
 ### 🧠 EEG Seizure Prediction
-[![Repo](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github)](https://github.com/wasiq0)
+[![Repo](https://img.shields.io/badge/GitHub-View_Repo-181717?style=flat-square&logo=github)](https://github.com/wasiqvoid)
 ![Scikit-learn](https://img.shields.io/badge/-Scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
 
 Classified epileptic seizures from **150×1,025 high-dimensional EEG data**. Applied dimensionality reduction, noise filtering, and hyperparameter-tuned SVM/RF/LR — achieving **78% accuracy**.
@@ -132,12 +132,12 @@ Classified epileptic seizures from **150×1,025 high-dimensional EEG data**. App
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=wasiq0&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=E6A817&icon_color=E6A817&text_color=cdd9e5&ring_color=E6A817" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=wasiq0&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=E6A817&text_color=cdd9e5&langs_count=8" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=wasiqvoid&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=E6A817&icon_color=E6A817&text_color=cdd9e5&ring_color=E6A817" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=wasiqvoid&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=E6A817&text_color=cdd9e5&langs_count=8" />
 </div>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=wasiq0&theme=github-dark-blue&hide_border=true&background=0d1117&stroke=E6A817&ring=E6A817&fire=E6A817&currStreakLabel=E6A817&sideLabels=cdd9e5&dates=768390" />
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=wasiqvoid&theme=github-dark-blue&hide_border=true&background=0d1117&stroke=E6A817&ring=E6A817&fire=E6A817&currStreakLabel=E6A817&sideLabels=cdd9e5&dates=768390" />
 </div>
 
 ---
