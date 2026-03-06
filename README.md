@@ -132,10 +132,17 @@ Classified epileptic seizures from **150×1,025 high-dimensional EEG data**. App
 ## 📊 GitHub Stats
 
 <div align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=wasiqvoid&show_icons=true&theme=github_dark&hide_border=true&bg_color=1a1b26&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&ring_color=58a6ff&count_private=true&include_all_commits=true" alt="GitHub Stats" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=wasiqvoid&layout=compact&theme=github_dark&hide_border=true&bg_color=1a1b26&title_color=58a6ff&text_color=c9d1d9&langs_count=10" alt="Top Languages" />
+</div>
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=wasiqvoid&theme=github-dark-blue&hide_border=true&background=1a1b26&stroke=58a6ff&ring=58a6ff&fire=ff8a65&currStreakLabel=58a6ff&sideLabels=c9d1d9&dates=8b949e" alt="GitHub Streak" />
+</div>
+
+<div align="center">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=wasiqvoid&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=E6A817&icon_color=E6A817&text_color=cdd9e5&ring_color=E6A817" />
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=wasiqvoid&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=E6A817&text_color=cdd9e5&langs_count=8" />
 </div>
-
 <div align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com?user=wasiqvoid&theme=github-dark-blue&hide_border=true&background=0d1117&stroke=E6A817&ring=E6A817&fire=E6A817&currStreakLabel=E6A817&sideLabels=cdd9e5&dates=768390" />
 </div>
