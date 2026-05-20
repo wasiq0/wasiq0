@@ -12,7 +12,7 @@
 
 <!-- Badges -->
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-wasiqbakhsh-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/wasiqbakhsh)
-[![Portfolio](https://img.shields.io/badge/Portfolio-wasiqvoid.github.io-E6A817?style=for-the-badge&logo=github&logoColor=white)](https://wasiqvoid.github.io/wasiqvoid/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-wasiqvoid.github.io-E6A817?style=for-the-badge&logo=github&logoColor=white)](https://wasiqvoid.github.io/)
 [![Email](https://img.shields.io/badge/Email-Wasiqcyber@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:Wasiqcyber@gmail.com)
 [![Location](https://img.shields.io/badge/Location-Buffalo%2C%20NY-39d0c8?style=for-the-badge&logo=googlemaps&logoColor=white)](https://maps.google.com/?q=Buffalo,NY)
 
